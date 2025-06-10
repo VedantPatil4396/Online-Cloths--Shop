@@ -1,0 +1,37 @@
+package com.example.demo.controller;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.bean.CustomerLogin;
+import com.example.demo.dao.CustomerLoginDao;
+
+@RestController
+@CrossOrigin("*")
+
+public class CustomerLoginController  {
+	
+	@Autowired
+	CustomerLoginDao custlogin;
+
+//	@PostMapping("/userregister")
+//	public 
+//	
+	
+	@GetMapping("/userlogin/{email}/{pass}")
+	public CustomerLogin getCustomerLogin(@PathVariable String email, @PathVariable String pass)
+	{
+		return custlogin.findByCustEmailAndCustPassword(email, pass);
+	
+	}
+
+//	public CustomerLogin getCustomerLogin(String email, String pass){
+//	return custlogin.findByCustEmailAndCustPassword(email, pass);
+	
+	
+}

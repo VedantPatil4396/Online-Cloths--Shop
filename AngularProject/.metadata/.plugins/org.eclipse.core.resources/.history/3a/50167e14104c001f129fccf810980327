@@ -1,0 +1,43 @@
+package com.example.demo.bean;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class CustomerLogin {
+
+	   @Id
+	    @GeneratedValue(strategy = GenerationType.AUTO)
+	    private long id;
+		private String custName;
+		private String custEmail;
+		private String custPassword;
+		private long custContact;
+		private String custAddress;
+		
+		public CustomerLogin() {
+			super();
+		
+		}
+
+		public CustomerLogin(long id, String custName, String custEmail, String custPassword, long custContact,
+				String custAddress) {
+			super();
+			this.id = id;
+			this.custName = custName;
+			this.custEmail = custEmail;
+			this.custPassword = custPassword;
+			this.custContact = custContact;
+			this.custAddress = custAddress;
+		}
+		
+		
+		
+		
+		
+		
+	
+	
+}

@@ -1,0 +1,128 @@
+<!-- courosal ------------------------ --> 
+<div>
+  <app-suppilernavigation></app-suppilernavigation>
+ 
+    @if (images) {
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="images[0]" alt="Random first slide" />
+        </div>
+        <div class="carousel-caption">
+          <!-- <marquee width="100%" direction="up" height="100%">
+            This is a sample scrolling text that has scrolls in the upper direction.
+            </marquee> -->
+          <!-- <h3><b>Fashion is like eating<br> shouldn't stick to the same menu</b></h3> -->
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="images[1]" alt="Random second slide" />
+        </div>
+        <div class="carousel-caption">
+          <!-- <marquee width="60%" direction="down" height="100%">
+            This is a sample scrolling text that has scrolls in the upper direction.
+            </marquee> -->
+          <!-- <h3><b>Fashion is like eating<br> shouldn't stick to the same menu</b></h3> -->
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+       
+          <img [src]="images[2]" alt="Random third slide" />
+        </div>
+        <div class="carousel-caption">
+          <!-- <marquee width="60%" direction="up" height="100%">
+            This is a sample scrolling text that has scrolls in the upper direction.
+            </marquee> -->
+          <!-- <h3><b>Fashion is like eating<br> shouldn't stick to the same menu</b></h3> -->
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  }
+
+<!-- home cards 
+  <div class="container">
+    <strong><p>Our Highlights</p></strong>
+    <div class="card-group row">
+      <div class="col-sm-4 offset-1" *ngFor="let card of cards">
+        <img class="card-img-top" [src]="card.imgSrc" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{ card.title }}</h5>
+        <p class="card-text">{{ card.text }}</p>
+        <a href="/login" class="btn btn-primary">Add To Cart</a>&nbsp;&nbsp;
+        <a href="#" class="btn btn-primary">Buy Now</a>
+       
+      </div>
+      </div>
+      </div>
+    </div>-->
+
+    
+
+
+
+  <!-- Footer ------------------------ --> 
+
+  <footer>
+    <div class="footer-content">
+        <div class="footer-section-center">  
+            <a href="/privacy">Privacy Policy</a> 
+           
+            <a href="/suppilerlogin">Join us as a supplier</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/login"><img src="Linkedin.jpeg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><img src="instagram.jpeg" alt="Instagram"></a>
+            <a href="https://www.facebook.com/"><img src="Facebook.jpeg" alt="Facebook"></a>
+            <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D"><img src="Twitter.jpeg" alt="Twitter"></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© All Rights Reserved | Powered by OnlineClothShop</p>
+      <a href="/contactus">Feel Freely to contact us</a><br>
+    
+      <!-- <a href="/shoppingcart">Cart</a> -->
+      <!-- <a><img src="cart.jpg" width ="45px" href="/shoppingcart"></a> -->
+
+
+    </div>
+</footer>
+</div>
+
+
+
+ 
+  
+
+
+<!-- <div class="container py-5">
+  <app-suppilernavigation></app-suppilernavigation>
+  <header class="text-center mb-5">
+    <h1 class="display-4 font-weight-bold">Fashion Retailors</h1>
+    <p class="font-italic text-muted mb-0">Available at various states in India</p>
+  
+        <h5>Fashion is the armour to survive the reality of everyday life</h5>
+    
+  </header>
+ 
+
+  <h2 class="font-weight-bold mb-2" >Brands</h2>
+  <p class="font-italic text-muted mb-4"> </p>
+  
+    <div class="row pb-5 mb-6">
+      <div class="col-lg-3 col-md-6 mb-6 mb-lg-0"  *ngFor=" let i of SProductsInfo">
+      <div class="card rounded shadow-sm border-0">
+        <div class="card-body p-4"><img [src]="i.imgPath" alt="" class="img-fluid d-block mx-auto mb-6 img-size">
+          <h5 class="text-dark" align="center">{{i.productName}}</h5>
+          <h5 class="text-dark"><h6>Product Price</h6>{{i.productPrice|currency:'INR'}}</h5>
+          <h5 class="text-dark"><h6>Available Quantity</h6>{{i.productQunatity}} </h5>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </div>
+  
+
+   -->

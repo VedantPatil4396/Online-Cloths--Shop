@@ -1,0 +1,91 @@
+<section class="wrapper">
+
+  <div class="container-fostrap">
+    <app-usernavigationcomponent></app-usernavigationcomponent>
+    <div>
+      <img src="https://i.pinimg.com/originals/ca/86/d4/ca86d4ece0013a4274283278ac0f7fd7.png"  class="fostrap-logo"/>
+      <h1 class="heading">
+        Style House
+      </h1>
+  </div>
+
+
+      <div class="content"  >
+          <div class="container" >   
+              <div class="row" >
+                  <div class="col-xs-12 col-sm-4" *ngFor=" let i of Product" >
+                      <div class="card" >
+                          <a class="img-card" href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
+                            <img [src]="i.imgPath">
+                        </a>
+                          <div class="card-content" >
+                              <h5 class="card-title" align="center">
+                                {{i.productName}}
+                              </h5>
+                              <div class="price">{{i.price|currency:'INR'}}</div>
+                              <!-- <p class="">
+                                  Tutorial to make a carousel bootstrap by adding more wonderful effect fadein ...
+                              </p>  -->
+                              <div class="quantity">Product Quantity : {{i.productQuantity}}</div>
+                              <div class="category">Product Category : {{i.productCategory}}</div>
+                             
+                              
+                          </div>
+                          <div class="card-read-more">
+                              <button (click)="addCart(i.productId)" class="btn btn-link btn-block">Add to cart</button>
+                              
+                          </div>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- <div class="container">
+     <app-suppilernavigation></app-suppilernavigation> 
+     <app-navbarcomponent></app-navbarcomponent> -
+    <app-usernavigationcomponent></app-usernavigationcomponent>
+    <header class="text-center mb-5">
+      <h1 class="display-4 font-weight-bold">Fashion Retailors</h1>
+      <p class="font-italic text-muted mb-0">Available at various states in India</p>
+    
+          <h5>Fashion is the armour to survive the reality of everyday life</h5>
+      
+    </header> 
+   
+  
+    <h3 class="font-weight-bold mb-2" align="center">Products</h3>
+    <p class="font-italic text-muted mb-4"> </p>
+    
+      <div class="row pb-5 mb-6">
+        <div class="col-lg-3 col-md-6 mb-6 mb-lg-0"  *ngFor=" let i of Product">
+        
+        <div class="card rounded shadow-sm border-0">
+          <div class="card-body p-3"><img [src]="i.imgPath" alt="" class="img-fluid d-block mx-auto mb-6 img-size">
+            <h5 class="text-dark" align="center">{{i.productName}}</h5>
+            <h5 class="text-dark"><h6>Product Price</h6>{{i.price|currency:'INR'}}</h5>
+            <h5 class="text-dark"><h6>Available Quantity</h6>{{i.productQuantity}} </h5>
+            <h5 class="text-dark"><h6>Product Category</h6>{{i.productCategory}} </h5>
+
+            <div class="card-body">
+              <button class="btn btn-primary" (click)="addCart(i.productId)">Add To Cart</button>
+             <a href="#" class="btn btn-primary" align="center">Buy Now</a>
+            </div>
+          
+            </div>
+          </div>
+  
+        </div>
+        </div>
+      </div>
+    
+  
+     -->

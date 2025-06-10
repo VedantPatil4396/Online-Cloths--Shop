@@ -1,0 +1,144 @@
+img {
+    width: 210vh;
+    height: 90vh; 
+  } 
+  
+  /*------------Footer------------*/
+
+  footer {
+    background-color: #394648; 
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-section-center {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.footer-section-center a {
+    color: white;
+    text-decoration: Bold;
+    margin: 0 250px; 
+}
+
+.footer-section-center a:hover {
+  text-decoration: underline;
+    color: red;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media a {
+    margin-left: 15px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+ /*------------Cards------------*/
+
+  .custom-img {
+  width: 50pxpx;
+  height: 50px;
+  object-fit: none;
+  border: solid;
+}
+.card-img-top
+{
+  height: 200px;
+  width: 289px;
+  margin-top: 20px;
+}
+.card-group .card {
+  margin-right: 20px; 
+ 
+}
+
+.card-group .card:last-child {
+  margin-right:10px;
+
+}
+.card-body{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  
+  
+}  
+.container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* background-image: url('BGG.jpg'); */
+}
+.col-sm-4{
+  border: solid rgb(243, 246, 247);
+  width: 315px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(19, 19, 18);
+}
+.btn{
+  margin-bottom: 20px;
+}
+.card-img-top:hover
+{
+  height: 215px;
+  width: 290px;
+}
+.container strong p{
+  background: rgb(98, 63, 63);
+  font-family:Arial;
+  text-align: center;
+  font-size: 250%;
+  color: white;
+  text-shadow:1px 1px 2px #000000, 0 0 5px gold;
+}
+.carousel-caption h3{
+  font-family:Arial;
+  text-align: center;
+  font-size: 300%;
+  color: white;
+  text-shadow:1px 1px 2px #000000, 0 0 5px gold;
+  margin-bottom: 25%;
+}
+
+
+
+
+
+
+
+
+
+ 

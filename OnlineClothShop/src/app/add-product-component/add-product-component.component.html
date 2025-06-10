@@ -1,0 +1,125 @@
+<!-- Registration 8 - Bootstrap Brain Component -->
+<section class="bg-light p-3 p-md-4 p-xl-5">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-xxl-11">
+          <div class="card border-light-subtle shadow-sm">
+            <div class="row g-0">
+              <div class="col-12 col-md-6">
+                <img class="img-fluid rounded-start w-100 h-100 object-fit-cover" loading="lazy" src="delaer.jpg" alt="Welcome back you've been missed!">
+              </div>
+              <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                <div class="col-12 col-lg-11 col-xl-10">
+                  <div class="card-body p-3 p-md-4 p-xl-5">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="mb-5">
+                          <div class="text-center mb-4">
+                            <a href="#!">
+                           
+                            </a>
+                          </div>
+                          <h2 class="h4 text-center">Add Product</h2>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <form (ngSubmit)="handleSubmit()" [formGroup]="addRecordForm">
+                      <div class="row gy-3 overflow-hidden">
+                        <div class="col-12">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="productName" formControlName="productName" id="productName" placeholder="Product Name" required>
+                            <label for="productName" class="form-label">Product Name</label>
+                            <!-- <span *ngIf="productName.errors?.required">Product Name is required</span> -->
+                          </div>
+                        </div>   
+
+
+                        <div class="col-12">
+                          <div class="form-floating mb-3">
+                            <input type="pricerange"class="form-control"  formControlName="price"  name="pricerange" id="pricerange" placeholder="Price Range" required>
+                            <label for="pricerange" class="form-label">Price</label>
+                            <!-- <span *ngIf="price.errors?.pattern">Enter only numbers</span> -->
+                          </div>
+                        </div>
+
+                        
+                        <div class="col-12">
+                          <div class="form-floating mb-3">
+                            <input type="pfor"  class="form-control" name="pfor" formControlName="productFor" id="pfor" placeholder="Product form" required>
+                            <label for="pfor" class="form-label">Product For</label>
+      
+                              </div>
+                        </div>
+
+                        <div class="col-12">
+                          <div class="form-floating mb-3">
+                            <input type="Qunatity" class="form-control"  formControlName="productQuantity" name="quantity" id="quantity" value="" placeholder="Quantity" required>
+                            <label for="quantity" class="form-label">Quantity</label>
+                            <!-- <span *ngIf="productQuantity.errors?.required">Enter only numbers</span> -->
+
+                          </div>
+                        </div>
+
+                        <div class ="col-12">
+                        <div class="form-floating mb-3">  
+                            <input class="form-control"  type="text" id="categories" formControlName="productCategory" name="categories" value="" list="Categories" placeholder="Select Categories" required>
+                            <label for="categories" class="form-label">Select Category</label>
+                            <datalist id="Categories">
+                              <option value="Tops">  
+                              <option value="T-Shirts">  
+                              <option value="Jeans">   
+                              <option value="One Piece">   
+                              <option value="Formals">   
+                              <option value="Jackets">   
+                              <option value="Hoodies">
+                              </datalist>
+                        </div>
+                        </div>
+
+                        
+                        <div class ="col-12">
+                          <div class="form-floating mb-3">  
+                              <input class="form-control" type="text" id="brand" formControlName="productBrand" name="brand" value="" list="Brand" placeholder="Select Brand" required>
+                              <label for="brand"  class="form-label">Select Brand</label>
+                              <datalist id="Brand">
+                                <option value="Nike">  
+                                <option value="Adidas">  
+                                <option value="Zara">   
+                                <option value="Levis">   
+                                <option value="Fabindia">   
+                                <option value="Hermès">   
+                                <option value="Dior">
+                                </datalist>
+                          </div>
+                          </div>
+
+                          <div class="col-12">
+                            <div class="form-floating mb-3">
+                              <input type="url" class="form-control"  formControlName="imgPath"  id="imgPath" value="" placeholder="Image" required>
+                              <label for="imgPath" class="form-label"> Add Image</label>
+                              <!-- <span *ngIf="productQuantity.errors?.required">Enter only numbers</span> -->
+  
+                            </div>
+                          </div>
+
+                
+
+                        
+                        <div class="col-12">
+                          <div class="d-grid">
+                            <button class="btn btn-dark btn-lg" type="submit" value="Submit"><a href="/addProduct"></a>Add Product</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

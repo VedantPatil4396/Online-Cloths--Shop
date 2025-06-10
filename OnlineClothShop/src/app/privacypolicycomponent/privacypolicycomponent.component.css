@@ -1,0 +1,44 @@
+.navbar {
+    color: white; 
+  }
+  
+  .navbar-nav .nav-link,
+  .navbar-brand {
+    color: white !important; 
+  }
+  
+  .navbar-toggler-icon {
+    background-color: white; 
+  }
+  
+  .dropdown-menu .dropdown-item {
+    color: black;
+  }
+  .navbar-nav .nav-link:hover,
+  .navbar-brand:hover {
+    color: #f8f9fa !important;
+  }
+
+
+h1{
+    text-align: center;
+    color: brown;
+}
+h2{
+    text-align: center;
+    color: blueviolet;
+}
+.First{
+    background-color: rgb(208, 208, 174);
+}
+  
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+     }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
